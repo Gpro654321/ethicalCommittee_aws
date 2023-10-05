@@ -65,6 +65,11 @@ if not os.path.exists(html_dir):
     print("html_dir NOT found, creating it...")
     os.makedirs(html_dir)
 
+html_backup_dir = "./html_backup"
+if not os.path.exists(html_backup_dir):
+    print("html_backup_dir NOT found, creating it...")
+    os.makedirs(html_backup_dir)
+
 # create a directory to put the newly created pdf files
 pdf_dir = "./pdf_files"
 if not os.path.exists(pdf_dir):
@@ -120,8 +125,9 @@ for index, row in df.iterrows():
     html_to_pdf(html_file_path)
 
     # to prevent clutter of the html_files folder the html files
-    # will be deleted once a pdf file is created out of it
-    os.remove(html_file_path)
+    # will be moved to a backup directory 
+    backup_file_path = os.path.join(html_backup_dir,html_file_name)
+    shutil.move(html_file_path, backup_file_path)
 
 
 # after everything is completed delete the existing rows

@@ -1,32 +1,29 @@
-
 @page{
     size: a4 portrait;
     margin: 2mm;
 }
-
   
 body {
     display: flex;
     flex-direction: column;
-    margin: 0mm;
 }  
 
 .seniormost {
-	display: flex;
-	flex-direction: column;
-	margin: 0mm;
+	height:297mm;
+	width:210mm;
+	position:absolute;
 }
 
 .topBanner {
 	height: 45mm;
-	margin-left: 5mm;
 	display:flex;
 	flex-direction:row;
+	position:relative;
 }
 
 .collegeEmblem {
-	width: 43mm;
-	height: 43mm;
+	width: 45mm;
+	height: 45mm;
 	float: left;
 }
 
@@ -37,7 +34,7 @@ body {
 
 
 .topBannerTitle {
-	width: 158mm;
+	width: 168mm;
 	height: 100%;
 	float: right;
 	display: flex;
@@ -62,46 +59,47 @@ body {
 .college {
 	color: #46458C;
 	text-align: center;
-	font-family: Times New Roman;
+	font-family: Cormorant Garamond;
 	font-style: normal;
 	font-size: 20px;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: normal;
 	
 }
 
-
 hr {
+
 	color: #BB2525;
 	background-color: #BB2525;
 	height: 2px;
 	border: 1mm;
-	margin-left: 5mm;
-}
+	margin: 0mm;
+	position: relative;
+	border-top: solid 1px #BB2525 !important;
 
+
+
+}
 .mainContent{
 
     height: 245mm;
     display: flex;
-    justify-content: flex-start;
+    position: relative;
+      
 }
 
 .leftCol {
-	width: 55mm;
-	margin-left: 5mm;
-	margin-right: 0mm;
-	margin-top: 5px;
-	margin-bottom: 0mm;
+	width: 63mm;
+	float: left;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
     	 
 }
 
 .rightCol {
-	width: 145mm;
-	margin: 0mm;
-	display:flex;
+	width: 147mm;
+	float: right;
+	display: flex;
 	flex-direction:column;
 	justify-content: flex-start;
 }
@@ -109,10 +107,10 @@ hr {
 .role {
 	color: #BB2525;
 	text-align: left;
-	font-family: Times New Roman;
+	font-family: Roboto;
 	font-style: normal;
-	font-size: 14px;
-	font-weight: bold;
+	font-size: 13px;
+	font-weight: 700;
 	line-height: normal;
 }
 
@@ -120,10 +118,10 @@ hr {
 
 	color: #46458C;
 	text-align: left;
-	font-family: Times New Roman;
+	font-family: Roboto;
 	font-style: normal;
 	font-size: 11px;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: normal;
 
 }
@@ -132,39 +130,36 @@ hr {
 
 	color: #46458C;
 	text-align: left;
-	font-family: Times New Roman;
+	font-family: Roboto;
 	font-style: normal;
 	font-size: 10px;
 	font-weight: 350;
 	line-height: normal;
-	margin-bottom: 5px;
+	margin-bottom: 4px;
 
 }
 
 .members {
-	margin-left: 0mm;
-	margin-bottom:6px;
-
+	margin: 6px;
 }
 
 .refNo {
 
 	color: #46458C;
 	text-align: right;
-	font-family: Times New Roman;
+	font-family: Roboto;
 	font-style: normal;
 	font-size: 12px;
 	font-weight: 700;
 	line-height: normal;
 	margin-top: 5px;
-	margin-right: 0mm;
 }
 
 .certificateTitle {
 
 	color: #BB2525;
 	text-align: center;
-	font-family: Times New Roman;
+	font-family: Roboto;
 	font-style: normal;
 	font-size: 20px;
 	font-weight: 700;
@@ -198,7 +193,7 @@ hr {
 	color: #46458C;
 	text-align: justify;
 	text-justify: inherit;
-	font-family: Times New Roman;
+	font-family: Cormorant Garamond;
 	font-style: normal;
 	font-size: 19px;
 	font-weight: 400;
@@ -206,23 +201,25 @@ hr {
 
 }
 
-
 .signingArea{
 	display: flex;
 	/* to shift this div to the right*/
+	align-self: flex-end;
 	flex-direction:column;
 	justify-content: flex-end;
 	width: fit-content;
 	margin-top: 100px;
-	align-self:flex-end;
 
 }
 
 .signingAuthority {
 
 	color: #46458C;
+	/*
 	text-align: right;
-	font-family: Times New Roman;
+	*/
+	text-align: left;
+	font-family: Cormorant Garamond;
 	font-style: normal;
 	font-size: 15px;
 	font-weight: 400;
@@ -233,7 +230,10 @@ hr {
 .signingAuthorityDesignation {
 
 	color: #46458C;
+	/*
 	text-align: right;
+	*/
+	text-align: left;
 	font-family: Rouge Script;
 	font-style: normal;
 	font-size: 20px;
@@ -241,3 +241,4 @@ hr {
 	line-height: normal;
 
 }
+
